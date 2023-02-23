@@ -46,10 +46,9 @@ def calculate():
     else:
         try:
             result = divide(num1, num2)
-        except ValueError as e:
-            print(e)
-            return
-
+        except ValueError:
+                return
+        
     print(f"Result is: {result:.2f}")
 
     choice = input("Would you like to do a new calculation? (yes/no): ")
